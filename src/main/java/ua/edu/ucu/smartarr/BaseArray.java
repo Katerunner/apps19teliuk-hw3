@@ -12,7 +12,7 @@ public class BaseArray implements SmartArray {
 
     @Override
     public Object[] toArray() {
-        return array;
+        return Arrays.copyOf(array, array.length);
     }
 
     @Override

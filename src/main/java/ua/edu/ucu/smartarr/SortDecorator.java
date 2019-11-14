@@ -16,14 +16,16 @@ public class SortDecorator extends SmartArrayDecorator {
 
     @Override
     public Object[] toArray() {
-        ArrayList<Object> preResult = new ArrayList<>(Arrays.asList(smartArray.toArray()));
+        ArrayList<Object> preResult =
+                new ArrayList<>(Arrays.asList(smartArray.toArray()));
         preResult.sort(comparator);
         return preResult.toArray();
     }
 
     @Override
     public String operationDescription() {
-        return "Sort Decorator, s'''''''''orts elements using MyComparator to compare them";
+        return "Sort Decorator, " +
+                "sorts elements using MyComparator to compare them";
     }
 
     @Override

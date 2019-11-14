@@ -1,11 +1,12 @@
 package ua.edu.ucu.smartarr;
 
 
-import java.util.*;
+import java.util.LinkedList;
 
 // Remove duplicates from SmartArray. Use method equals() to compare objects
 public class DistinctDecorator extends SmartArrayDecorator {
-//    private Set<Object> set = new HashSet<>(Arrays.asList(smartArray.toArray()));
+//    private Set<Object> set =
+//    new HashSet<>(Arrays.asList(smartArray.toArray()));
 
     public DistinctDecorator(SmartArray smartArray) {
         super(smartArray);
