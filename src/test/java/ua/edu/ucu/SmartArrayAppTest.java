@@ -35,5 +35,12 @@ public class SmartArrayAppTest {
                 SmartArrayApp.findDistinctStudentNamesFrom2ndYearWithGPAgt4AndOrderedBySurname(students);
         String[] expectedStudentNames = {"Borek Tomasz", "Kranga Antons", "Sutter Burr"};
         assertArrayEquals(expectedStudentNames, studentNames);
+
+    }
+
+    @Test
+    public void testSmartArrayApp() {
+        SmartArrayApp sma = new SmartArrayApp();
+        assertEquals("ua.edu.ucu.SmartArrayApp", sma.getClass().getName());
     }
 }
