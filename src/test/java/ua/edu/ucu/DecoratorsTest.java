@@ -41,12 +41,15 @@ public class DecoratorsTest {
         assertEquals("Base array", ba.operationDescription());
         assertEquals("Distinct Decorator, removes duplicates",
                 dd.operationDescription());
-        assertEquals("Filter Decorator, tests every element and removes it " +
-                "if it doesn't satisfy MyPredicate", fd.operationDescription());
+        assertEquals("Filter Decorator, tests every" +
+                        " element and removes it " +
+                        "if it doesn't satisfy MyPredicate",
+                fd.operationDescription());
         assertEquals("Sort Decorator, " +
                         "sorts elements using MyComparator to compare them",
                 sd.operationDescription());
-        assertEquals("Map Decorator, maps every element to another object using MyFunction",
+        assertEquals("Map Decorator, maps every element to another" +
+                        " object using MyFunction",
                 md.operationDescription());
 
 

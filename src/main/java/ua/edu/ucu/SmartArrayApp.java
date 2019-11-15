@@ -45,9 +45,11 @@ public class SmartArrayApp {
                 t -> ((Student) t).getYear() == 2 &&
                         ((Student) t).getGPA() >= MAGIC_NUMBER;
         MyFunction getStudentName =
-                t -> ((Student) t).getSurname() + " " + ((Student) t).getName();
+                t -> ((Student) t).getSurname() + " " +
+                        ((Student) t).getName();
         MyComparator compareBySurname =
-                (o1, o2) -> ((Student) o1).getSurname().compareTo(((Student) o2).getSurname());
+                (o1, o2) -> ((Student) o1).getSurname().compareTo(((Student)
+                        o2).getSurname());
 
         SmartArray studentArray = new BaseArray(students);
         studentArray = new MapDecorator(
@@ -58,6 +60,7 @@ public class SmartArrayApp {
                         compareBySurname),
                 getStudentName);
 
-        return Arrays.copyOf(studentArray.toArray(), studentArray.size(), String[].class);
+        return Arrays.copyOf(studentArray.toArray(), studentArray.size(),
+                String[].class);
     }
 }
